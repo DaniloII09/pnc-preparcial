@@ -1,0 +1,761 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: inventario restaurante
+meta:
+  id: wrk_bb84f14c996c47a588abb1538c293e0d
+  created: 1779006264446
+  modified: 1779008488119
+  description: ""
+collection:
+  - name: POST METHODS
+    meta:
+      id: fld_d6f8e936609a4f268826788f186a7c45
+      created: 1779006958425
+      modified: 1779008264759
+      sortKey: -1779007944246
+      description: ""
+    children:
+      - url: "{{ _.url }}"
+        name: "Create Product #1"
+        meta:
+          id: req_77b5dff334df4b0bbbd2c22f8b314cf4
+          created: 1779006264474
+          modified: 1779006963773
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963743
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Grilled Chicken",
+                "description": "Seasoned grilled chicken breast",
+                "price": 8.99,
+                "quantity": 50,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Create Product #2"
+        meta:
+          id: req_334ce980bf854e62a930d460b4567d99
+          created: 1779006373767
+          modified: 1779006973306
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963643
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Caesar Salad",
+                "description": "Fresh romaine lettuce with caesar dressing",
+                "price": 6.50,
+                "quantity": 0,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Create Product #3"
+        meta:
+          id: req_dcaa7028700e4cfca08334fad372fc17
+          created: 1779006381093
+          modified: 1779006978809
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963543
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Orange Juice",
+                "description": "Freshly squeezed orange juice",
+                "price": 3.99,
+                "quantity": 100,
+                "available": true,
+                "category": "DRINK"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Create Product #4"
+        meta:
+          id: req_2f02630f8b3a4bd7983b3e80c40bc372
+          created: 1779006436592
+          modified: 1779006981926
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963443
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Sparkling Water",
+                "description": null,
+                "price": 1.99,
+                "quantity": 200,
+                "available": true,
+                "category": "DRINK"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Create Product #5"
+        meta:
+          id: req_dd3c9760fe5948a6b03cf29fec34f795
+          created: 1779006511277
+          modified: 1779006987737
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963343
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Olive Oil",
+                "description": "Extra virgin olive oil",
+                "price": 12.99,
+                "quantity": 30,
+                "available": true,
+                "category": "INGREDIENT"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Create Product #6"
+        meta:
+          id: req_05e7ce4957bd41acbe2d7a4393c29a22
+          created: 1779006516130
+          modified: 1779006993681
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963243
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Sea Salt",
+                "description": "Fine sea salt",
+                "price": 2.50,
+                "quantity": 500,
+                "available": false,
+                "category": "INGREDIENT"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Duplicate Name
+        meta:
+          id: req_df2bec2b0a434d219e72865d5fab283b
+          created: 1779006867239
+          modified: 1779007430473
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963143
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "grilled Chicken",
+                "price": 5.99,
+                "quantity": 15,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Invalid Price
+        meta:
+          id: req_7ee695bb975b4b39bff8a6ce9b03dc11
+          created: 1779006901486
+          modified: 1779007616716
+          isPrivate: false
+          description: ""
+          sortKey: -1779006963043
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Free Item",
+                "price": 0.00,
+                "quantity": 10,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Invalid Quantity
+        meta:
+          id: req_50fd610fc10d42019c453ea4c004bdb9
+          created: 1779007745481
+          modified: 1779007793597
+          isPrivate: false
+          description: ""
+          sortKey: -1778601102030
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Negative Item",
+                "price": 10.00,
+                "quantity": -10,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: GET METHODS
+    meta:
+      id: fld_6ffcd067701042789e94465cc5392470
+      created: 1779007040279
+      modified: 1779008262893
+      sortKey: -1779007944146
+      description: ""
+    children:
+      - url: "{{ _.url }}/all"
+        name: Get all Products
+        meta:
+          id: req_7ce09486844343f5b9c9c17eb32498b5
+          created: 1779006553003
+          modified: 1779007574250
+          isPrivate: false
+          description: ""
+          sortKey: -1779007047393
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?category=INGREDIENT&available=true"
+        name: Get by Category and Available Filter
+        meta:
+          id: req_c0e3155f873e4d93bc45969bd164ffc4
+          created: 1779006733595
+          modified: 1779008407893
+          isPrivate: false
+          description: ""
+          sortKey: -1779007047293
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Get by Id
+        meta:
+          id: req_8e7d181a902c44f1a4611c0b5d70d87b
+          created: 1779007355961
+          modified: 1779007569910
+          isPrivate: false
+          description: ""
+          sortKey: -1779007047343
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: PUT METHODS
+    meta:
+      id: fld_cf405c283bfd45fa91c668db1e9fcc27
+      created: 1779007084423
+      modified: 1779008261198
+      sortKey: -1779007944046
+      description: ""
+    children:
+      - url: "{{ _.url }}/6"
+        name: "Update Product #1"
+        meta:
+          id: req_dddf4993a75a4267b6fd2f617ce6cb82
+          created: 1779006933152
+          modified: 1779008201591
+          isPrivate: false
+          description: ""
+          sortKey: -1779007269190
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Sea Salt",
+            	"description": "Fine sea salt",
+            	"price": 2.50,
+            	"quantity": 500,
+            	"available": true,
+            	"category": "INGREDIENT"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Update with Duplicate Name
+        meta:
+          id: req_e29c8ffcf11f47d9b597cfa4870d3d06
+          created: 1779007448275
+          modified: 1779007700770
+          isPrivate: false
+          description: ""
+          sortKey: -1779007269152.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Caesar SALAD",
+                "price": 5.99,
+                "quantity": 10,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Update with Invalid Price
+        meta:
+          id: req_419c1b678b9647b8a7d38bc46c08cdb5
+          created: 1779007694513
+          modified: 1779007716852
+          isPrivate: false
+          description: ""
+          sortKey: -1779007269115
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Grilled Chicken",
+                "price": 0.00,
+                "quantity": 10,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Update with Invalid Quantity
+        meta:
+          id: req_d13cf22e445a482c9cae5054e0349eb5
+          created: 1779007805392
+          modified: 1779007811693
+          isPrivate: false
+          description: ""
+          sortKey: -1779007158254
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Grilled Chicken",
+                "price": 10.00,
+                "quantity": -10,
+                "available": true,
+                "category": "FOOD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/3"
+        name: "Update Product #2 Available Changes to False"
+        meta:
+          id: req_0ca36a95ab3047f2a96e6ac6ff5623a4
+          created: 1779007856249
+          modified: 1779007911600
+          isPrivate: false
+          description: ""
+          sortKey: -1779007269171.25
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Orange Juice",
+                "description": "Freshly squeezed orange juice",
+                "price": 3.99,
+                "quantity": 0,
+                "available": true,
+                "category": "DRINK"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: PATCH METHODS
+    meta:
+      id: fld_e3e6ab05ff8942dd99a7510a55e289ce
+      created: 1779007943446
+      modified: 1779008259433
+      sortKey: -1779007943946
+      description: ""
+    children:
+      - url: "{{ _.url }}/1"
+        name: "Update Product Amount #2"
+        meta:
+          id: req_c87eccc9709d4350b86bdd15787a2f2a
+          created: 1779007968433
+          modified: 1779008123008
+          isPrivate: false
+          description: ""
+          sortKey: -1779007968433
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: '{ "amount": -10 }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Update With Invalid Quantity
+        meta:
+          id: req_fd7a5bc0585546989d3767dbce223fe0
+          created: 1779008067392
+          modified: 1779008091769
+          isPrivate: false
+          description: ""
+          sortKey: -1779007618811.5
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: '{ "amount": -999 }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: "Update Product Amount #1"
+        meta:
+          id: req_678599fa1aee4bd3bf2be91e095737b1
+          created: 1779008112186
+          modified: 1779008139139
+          isPrivate: false
+          description: ""
+          sortKey: -1779007968533
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: '{ "amount": 10 }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: DELETE METHODS
+    meta:
+      id: fld_c936b5ff8f5f4399b5a12835d45b4dbc
+      created: 1779008249159
+      modified: 1779008257012
+      sortKey: -1779007943846
+      description: ""
+    children:
+      - url: "{{ _.url }}/1"
+        name: Delete Product
+        meta:
+          id: req_c6d6ce49110648638855d10580e83b1a
+          created: 1779008267309
+          modified: 1779008296837
+          isPrivate: false
+          description: ""
+          sortKey: -1779008267309
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/5"
+        name: Delete with Ingredient Available
+        meta:
+          id: req_4ff2f00bd4ea47948a85862febb7b5ab
+          created: 1779008316616
+          modified: 1779008420135
+          isPrivate: false
+          description: ""
+          sortKey: -1779008267209
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5dcf647d49ada6b79094ec95423695367490f688
+    created: 1779006264462
+    modified: 1779006264462
+environments:
+  name: Base Environment
+  meta:
+    id: env_5dcf647d49ada6b79094ec95423695367490f688
+    created: 1779006264457
+    modified: 1779006292716
+    isPrivate: false
+  data:
+    url: localhost:8080/products

@@ -27,7 +27,7 @@ public class Book {
     private String isbn;
 
     @Column(nullable = false, updatable = false)
-    private Integer publishYear;
+    private Integer publicationYear;
 
     @Column(length = 50)
     private String language;

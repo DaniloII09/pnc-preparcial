@@ -1,0 +1,1081 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: gestion libros
+meta:
+  id: wrk_10f9180ba105492f8dfae6396c489b46
+  created: 1779086454021
+  modified: 1779086467501
+  description: ""
+collection:
+  - name: POST METHODS
+    meta:
+      id: fld_3b32363a11144bbbbe2f8331fe12f3d1
+      created: 1779086476675
+      modified: 1779089151091
+      sortKey: -1779089144778
+      description: ""
+    children:
+      - url: "{{ _.url }}"
+        name: "Register Book #1"
+        meta:
+          id: req_c95dfeb41a5e4a30b4ae427f7539d721
+          created: 1779086489760
+          modified: 1779086556748
+          isPrivate: false
+          description: ""
+          sortKey: -1779086489760
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Clean Code",
+                "author": "Robert C. Martin",
+                "isbn": "9780132350884",
+                "publicationYear": 2008,
+                "language": "English",
+                "pages": 431
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Register Book #2"
+        meta:
+          id: req_76a0e96695a2422b9c69e68f2801e54c
+          created: 1779086566677
+          modified: 1779086637312
+          isPrivate: false
+          description: ""
+          sortKey: -1779047378534.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "The Pragmatic Programmer",
+                "author": "David Thomas",
+                "isbn": "9780135957059",
+                "publicationYear": 2019,
+                "language": "English",
+                "pages": 352
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Register Book #3"
+        meta:
+          id: req_f613e62f9bca48829156a6c075a11f78
+          created: 1779086586690
+          modified: 1779086650021
+          isPrivate: false
+          description: ""
+          sortKey: -1779027822921.75
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Design Patterns",
+                "author": "Gang of Four",
+                "isbn": "9780201633610",
+                "publicationYear": 1994,
+                "language": "English",
+                "pages": 395
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Register Book #4"
+        meta:
+          id: req_ae185ecd24664ede850117c2841c17a0
+          created: 1779086589970
+          modified: 1779086661079
+          isPrivate: false
+          description: ""
+          sortKey: -1779018045115.375
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "El arte de programar",
+                "author": "Donald Knuth",
+                "isbn": "9780201485417",
+                "publicationYear": 1968,
+                "language": "Spanish",
+                "pages": 650
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: "Register Book #5"
+        meta:
+          id: req_f5b4bcd0d82f4b71a2d1541e9c19b5d9
+          created: 1779086595257
+          modified: 1779086671424
+          isPrivate: false
+          description: ""
+          sortKey: -1779013156212.1875
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "The Clean Coder",
+                "author": "Robert C. Martin",
+                "isbn": "9780137081073",
+                "publicationYear": 2011,
+                "language": "English",
+                "pages": 256
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Duplicate ISBN
+        meta:
+          id: req_aac47afd11324d899f8330b2a5bb18f4
+          created: 1779086599422
+          modified: 1779086697330
+          isPrivate: false
+          description: ""
+          sortKey: -1779010711760.5938
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Duplicado",
+                "author": "Autor",
+                "isbn": "9780132350884",
+                "publicationYear": 2010,
+                "language": "English",
+                "pages": 200
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Book publication year greater than this year
+        meta:
+          id: req_f52adcc9982d49e4b8c35e02add8caac
+          created: 1779086602936
+          modified: 1779086756277
+          isPrivate: false
+          description: ""
+          sortKey: -1779009489534.7969
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Libro futuro",
+                "author": "Autor",
+                "isbn": "9780132350885",
+                "publicationYear": 2099,
+                "language": "English",
+                "pages": 200
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Book publication year lower than 1900
+        meta:
+          id: req_4970bcbe025849c793625dc2d5f7c646
+          created: 1779086605737
+          modified: 1779086810048
+          isPrivate: false
+          description: ""
+          sortKey: -1779008878421.8984
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Libro antiguo",
+                "author": "Autor",
+                "isbn": "9780132350886",
+                "publicationYear": 1800,
+                "language": "English",
+                "pages": 200
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Numeric title
+        meta:
+          id: req_c83d6ed20ae2434c92163d2427da09c6
+          created: 1779086612450
+          modified: 1779086838979
+          isPrivate: false
+          description: ""
+          sortKey: -1779008572865.4492
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "123456",
+                "author": "Autor",
+                "isbn": "9780132350887",
+                "publicationYear": 2010,
+                "language": "English",
+                "pages": 200
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Short pages
+        meta:
+          id: req_8730d65b170e4d909f9ff156b558b0d0
+          created: 1779086616577
+          modified: 1779086869455
+          isPrivate: false
+          description: ""
+          sortKey: -1779008420087.2246
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Libro corto",
+                "author": "Autor",
+                "isbn": "9780132350888",
+                "publicationYear": 2010,
+                "language": "English",
+                "pages": 5
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}"
+        name: Invalid ISBN length
+        meta:
+          id: req_47aae55203be488b8a3adde7b12f69d8
+          created: 1779086899647
+          modified: 1779086917346
+          isPrivate: false
+          description: ""
+          sortKey: -1779010100647.6953
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Longitud ISBN",
+                "author": "Autor",
+                "isbn": "9",
+                "publicationYear": 2010,
+                "language": "English",
+                "pages": 200
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: GET METHODS
+    meta:
+      id: fld_0a80fdd73e474b3fbae76260e8c7f30e
+      created: 1779086934708
+      modified: 1779089149585
+      sortKey: -1779089144678
+      description: ""
+    children:
+      - url: "{{ _.url }}"
+        name: Get All Books
+        meta:
+          id: req_d15c0a16331d4f4dbf81019da809fa8c
+          created: 1779086946348
+          modified: 1779087001927
+          isPrivate: false
+          description: ""
+          sortKey: -1779086946348
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Get Book By Id
+        meta:
+          id: req_49897b8547924161ab43a275891ee328
+          created: 1779087020202
+          modified: 1779087144977
+          isPrivate: false
+          description: ""
+          sortKey: -1779086718054
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?minPages=100"
+        name: "Validate Incomplete Params #1"
+        meta:
+          id: req_2b4deb528c6d40a78e8c11f1e60dc586
+          created: 1779087086609
+          modified: 1779087604021
+          isPrivate: false
+          description: ""
+          sortKey: -1779086660980.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/999"
+        name: Get Book By Invalid Id
+        meta:
+          id: req_19ce854bc99440fba33fd35e97cd0a05
+          created: 1779087098107
+          modified: 1779087154905
+          isPrivate: false
+          description: ""
+          sortKey: -1779086703785.625
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?ngeibibv=test"
+        name: Validate Get Book by Invalid Params
+        meta:
+          id: req_3430dd3a48f64179a2433076152255e2
+          created: 1779087100951
+          modified: 1779087552255
+          isPrivate: false
+          description: ""
+          sortKey: -1779086668114.6875
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?author=Robert C. Martin"
+        name: "Get Book by Author Filter #1"
+        meta:
+          id: req_af8ea43717404fd686864f018a4509d3
+          created: 1779087104105
+          modified: 1779087210232
+          isPrivate: false
+          description: ""
+          sortKey: -1779086696651.4375
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?author=Donald Knuth"
+        name: "Get Book by Author Filter #2"
+        meta:
+          id: req_aa660c578f114d5e89ccadc575cd201c
+          created: 1779087184158
+          modified: 1779087246261
+          isPrivate: false
+          description: ""
+          sortKey: -1779086693084.3438
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?language=English"
+        name: "Get Book by Language Filter #1"
+        meta:
+          id: req_7423689f776f41d2801338ae693c6636
+          created: 1779087265931
+          modified: 1779087304685
+          isPrivate: false
+          description: ""
+          sortKey: -1779086680599.5156
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?language=Spanish"
+        name: "Get Book by Language Filter #2"
+        meta:
+          id: req_7af2a7a6c57f469fbb962e3fe550da27
+          created: 1779087268926
+          modified: 1779087324335
+          isPrivate: false
+          description: ""
+          sortKey: -1779086674357.1016
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?minPages=400&maxPages=700"
+        name: "Get Book by Page Range Filter #2"
+        meta:
+          id: req_c5cc83067ab44edeab822e060b461129
+          created: 1779087343729
+          modified: 1779087425236
+          isPrivate: false
+          description: ""
+          sortKey: -1779086671235.8945
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?minPages=200&maxPages=400"
+        name: "Get Book by Page Range Filter #1"
+        meta:
+          id: req_7b7aca4ed81543d5a0aeee563dd88b9d
+          created: 1779087364469
+          modified: 1779087403627
+          isPrivate: false
+          description: ""
+          sortKey: -1779086672796.498
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}?maxPages=300"
+        name: "Validate Incomplete Params #2"
+        meta:
+          id: req_29b12c575881487a968c12e89de96a89
+          created: 1779087592639
+          modified: 1779087658894
+          isPrivate: false
+          description: ""
+          sortKey: -1779086575370.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: PATCH METHODS
+    meta:
+      id: fld_c2f89474ac0344eea87eab661ea44479
+      created: 1779088145988
+      modified: 1779089147444
+      sortKey: -1779089144578
+      description: ""
+    children:
+      - url: "{{ _.url }}/1"
+        name: Patch Title
+        meta:
+          id: req_5907ec94c4994670b23ed89715ddd70d
+          created: 1779088164491
+          modified: 1779088478976
+          isPrivate: false
+          description: ""
+          sortKey: -1779088312529.75
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Código Limpio"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: "Check Patch #1"
+        meta:
+          id: req_1da3d6012c034f8a95108774dda448d7
+          created: 1779088361876
+          modified: 1779088597522
+          isPrivate: false
+          description: ""
+          sortKey: -1779088361876
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/2"
+        name: "Check Patch #2"
+        meta:
+          id: req_83e286a178e84cdab295550b2a48b53f
+          created: 1779088457938
+          modified: 1779088601734
+          isPrivate: false
+          description: ""
+          sortKey: -1779088300193.1875
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/2"
+        name: Patch Language
+        meta:
+          id: req_2e76aa1d9f55445c8ab19c853a358ca2
+          created: 1779088473422
+          modified: 1779088880618
+          isPrivate: false
+          description: ""
+          sortKey: -1779088287856.625
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "language": "Spanish"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/3"
+        name: "Check Patch #3"
+        meta:
+          id: req_bf3caa3e6e7c4ec79d3d96324b8af143
+          created: 1779088542194
+          modified: 1779088607645
+          isPrivate: false
+          description: ""
+          sortKey: -1779088287756.625
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/3"
+        name: Patch Title and Language
+        meta:
+          id: req_6c034ae714014f298ea4fc2300bb1a6b
+          created: 1779088555944
+          modified: 1779088583600
+          isPrivate: false
+          description: ""
+          sortKey: -1779088287656.625
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Patrones de Diseño",
+                "language": "Spanish"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Validate Empty Body
+        meta:
+          id: req_2033edfda7784fb88b70b5da35696a13
+          created: 1779088635745
+          modified: 1779088720578
+          isPrivate: false
+          description: ""
+          sortKey: -1779087617002.3125
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: "{}"
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Validate Blank Title
+        meta:
+          id: req_9f3dfc9e1a814e6fb0bff07a7787fb8f
+          created: 1779088697027
+          modified: 1779088731140
+          isPrivate: false
+          description: ""
+          sortKey: -1779087281675.1562
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "     "
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Validate Numeric Title
+        meta:
+          id: req_ac2c65f38314463f95c2d667a858083d
+          created: 1779088746168
+          modified: 1779088756680
+          isPrivate: false
+          description: ""
+          sortKey: -1779087114011.5781
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Validate Blank Language
+        meta:
+          id: req_397ec3b2a0024e6abcf1d03ae0c13e78
+          created: 1779088773356
+          modified: 1779088842029
+          isPrivate: false
+          description: ""
+          sortKey: -1779087197843.3672
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "language": "     "
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: DELETE METHODS
+    meta:
+      id: fld_c96f5494e62940fd86782023f67cff92
+      created: 1779089144478
+      modified: 1779089170939
+      sortKey: -1779089144478
+      description: ""
+    children:
+      - url: "{{ _.url }}/1"
+        name: Delete Book
+        meta:
+          id: req_fab56ca7ac1344c2aea98c4e443b3ee4
+          created: 1779089156940
+          modified: 1779089220064
+          isPrivate: false
+          description: ""
+          sortKey: -1779089194581
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/1"
+        name: Check Deleted Book
+        meta:
+          id: req_1ad57bbee76042658f22feb46c8c0eba
+          created: 1779089194481
+          modified: 1779089238864
+          isPrivate: false
+          description: ""
+          sortKey: -1779089194556
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/999"
+        name: Delete Invalid Book
+        meta:
+          id: req_4dae36ebcc6840dfb137b23bb2362533
+          created: 1779089235196
+          modified: 1779089244835
+          isPrivate: false
+          description: ""
+          sortKey: -1779089194531
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_17d02999e6306c6fbff144a9e34089a3236cf4ba
+    created: 1779086454045
+    modified: 1779086454045
+environments:
+  name: Base Environment
+  meta:
+    id: env_17d02999e6306c6fbff144a9e34089a3236cf4ba
+    created: 1779086454041
+    modified: 1779086521877
+    isPrivate: false
+  data:
+    url: localhost:8080/books

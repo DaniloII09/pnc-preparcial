@@ -54,16 +54,16 @@ public class BookController {
         if(minPages != null && maxPages != null)
             return ResponseEntity.ok(bookService.getBooksByPageRange(minPages, maxPages));
 
-        return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(bookService.getAllBooks());
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<BookResponse> updateBook(
             @PathVariable Long id, @Valid @RequestBody BookUpdateRequest request){
         return ResponseEntity.ok(bookService.updateBook(id, request));
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable Long id){
         bookService.deleteBook(id);
         return ResponseEntity.noContent().build();

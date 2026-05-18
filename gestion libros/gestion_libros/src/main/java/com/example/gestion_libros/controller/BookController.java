@@ -47,6 +47,10 @@ public class BookController {
             }
         }
 
+        if ((minPages != null && maxPages == null) || (minPages == null && maxPages != null)) {
+            throw new InvalidParameterException("Both minPages and maxPages must be provided");
+        }
+
         if(StringUtils.hasText(author))
             return ResponseEntity.ok(bookService.getBooksByAuthor(author));
         if(StringUtils.hasText(language))

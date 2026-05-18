@@ -6,7 +6,6 @@ import com.example.gestion_libros.dto.response.BookResponse;
 import com.example.gestion_libros.exception.BusinessRuleException;
 import com.example.gestion_libros.exception.DuplicateEntityException;
 import com.example.gestion_libros.exception.EntityNotFoundException;
-import com.example.gestion_libros.exception.InvalidParameterException;
 import com.example.gestion_libros.model.entity.Book;
 import com.example.gestion_libros.repository.BookRepository;
 import com.example.gestion_libros.service.BookService;
@@ -80,10 +79,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<BookResponse> getBooksByPageRange(Integer minPages, Integer maxPages) {
-        if ((minPages != null && maxPages == null) || (minPages == null && maxPages != null)) {
-            throw new InvalidParameterException("Both minPages and maxPages must be provided");
-        }
-
         return bookRepository
                 .findByPagesBetween(minPages, maxPages)
                 .stream()
